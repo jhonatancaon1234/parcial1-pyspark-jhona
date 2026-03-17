@@ -2,13 +2,14 @@
 
 El proyecto está organizado de la siguiente manera: 
 
-├── data/                         # Archivos CSV (Dataset de 150k filas)
-├── notebooks/                    # Jupyter Notebook (.ipynb) con el análisis
-├── docker-compose.yml            # Configuración de la infraestructura Spark
-├── Dockerfile                    # Personalización de la imagen de Jupyter/Spark
-└── README.md                     # Documentación general y pasos de ejecución
+├── data/                         
+├── notebooks/                 
+(.ipynb) con el análisis
+├── docker-compose.yml            
+├── Dockerfile                    
+└── README.md                     
 
-2. Contexto y Descripción
+**2. Contexto y Descripción**
 
 ¿De qué trata la base de datos?: Trabajamos con un dataset masivo de 150,000 registros que recopila información vital sobre empleados del sector tecnológico. Incluye variables demográficas (edad, género), laborales (rol, horas extra, modalidad de trabajo) y métricas psicológicas validadas (niveles de ansiedad, depresión y burnout).
 
@@ -20,7 +21,7 @@ H2: A mayor cantidad de horas extra, el nivel de burnout sube de forma lineal.
 H3: Los roles con mayor responsabilidad técnica (DevOps/Backend) presentan niveles de ansiedad más altos.
 
 
-3. Objetivos de la Consultoría
+**3. Objetivos**
 El objetivo principal es procesar este volumen de datos usando PySpark para:
 
 Identificar patrones: Ver qué grupos de empleados están en mayor riesgo (Outliers).
@@ -30,7 +31,7 @@ Validar realidades: Confirmar si el género o el rol influyen realmente en el es
 Sugerir mejoras: Basados en los datos, proponer cuál es la mejor modalidad de trabajo (Híbrido vs Remoto vs Onsite) para mantener al equipo sano.
 
 
-4. Aclaraciónes del proceso. 
+**4. Aclaraciónes del proceso.**
 
 ¿Qué es version y para qué sirve?: Básicamente indica la versión de la API de Docker Compose que vamos a usar (en este caso puse la 3.8). Es super importante porque define que funciones y que sintaxis son compatibles con el motor de Docker que tenga instalado la profe en su maquina.
 
